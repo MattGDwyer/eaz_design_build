@@ -257,16 +257,27 @@ section {
 --------------------------------------------------------------*/
 .header {
   z-index: 997;
-  position: absolute;
+  position: sticky;
   padding: 30px 0;
   top: 0;
   left: 0;
   right: 0;
+  background-color: white;
+  opacity: 80%;
+}
+
+.sticky-top {
+  position: sticky!important;
+  overflow: unset!important;
+  overflow-x: unset!important;
+  overflow-y: unset!important;
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 100px;
   margin-right: 6px;
+  margin-bottom: -20px;
+  padding-bottom: 0px;
 }
 
 .header .logo h1 {
